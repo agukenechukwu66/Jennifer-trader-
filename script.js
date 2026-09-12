@@ -10,3 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
  alert('User icon clicked');
  });
 });
+document.getElementById('registration-form').addEventListener('submit', (e) => {
+ e.preventDefault(); 
+ alert('Registration successful!');
+});
