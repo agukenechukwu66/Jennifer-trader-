@@ -9,8 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
  userIcon.addEventListener('click', () => {
  alert('User icon clicked');
  });
-});
-document.getElementById('registration-form').addEventListener('submit', (e) => {
- e.preventDefault(); 
+
+ const registrationForm = document.getElementById('registration-form');
+ if (registrationForm) {
+ registrationForm.addEventListener('submit', (e) => {
+ e.preventDefault();
  alert('Registration successful!');
+ });
+ }
 });
